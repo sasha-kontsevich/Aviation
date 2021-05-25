@@ -1,0 +1,157 @@
+.article-wrapper .image-wrapper img, .article-wrapper .main-image-wrapper .main-image, .article-wrapper .header {
+  box-shadow: 0px 0px 4px 0px #4448;
+}
+
+.article-wrapper .preamble {
+  text-indent: 27px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 18px;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(../fonts/Lora-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Merriweather;
+  src: url(../fonts/Merriweather-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Lora;
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+.article-wrapper {
+  width: 612px;
+}
+.article-wrapper .header {
+  height: 45px;
+  border-bottom: 2px solid #d21;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-top-right-radius: 15px;
+  margin-bottom: 0;
+}
+.article-wrapper .header .section-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.article-wrapper .header .topic-title {
+  color: #222;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+.article-wrapper .header .article-title {
+  background-color: #d21;
+  border-top-right-radius: 15px;
+  color: #fff;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.article-wrapper .main-image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 18px;
+}
+.article-wrapper .main-image-wrapper .main-image {
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+  border-radius: 6px;
+}
+.article-wrapper .row {
+  margin-bottom: 18px;
+}
+.article-wrapper .preamble {
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.article-wrapper p {
+  text-indent: 27px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #555;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.article-wrapper h1 {
+  color: #444;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 18px;
+  padding-left: 18px;
+}
+.article-wrapper h2 {
+  color: #444;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 9px;
+  padding-left: 9px;
+}
+.article-wrapper .image-wrapper {
+  width: 100%;
+  padding: 0 36px;
+}
+.article-wrapper .image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 9px;
+}
+.article-wrapper .image-wrapper .description {
+  text-indent: 27px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #555;
+  font-size: 14px;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-top: 6px;
+  font-weight: 500;
+}
+
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.sidebar-wrapper .articles-siedebar {
+  margin-top: 18px;
+  width: 252px;
+  margin-right: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sidebar-wrapper .articles-siedebar a div {
+  height: 36px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: #888;
+  text-align: left;
+  width: 100%;
+  padding-left: 36px;
+}
+.sidebar-wrapper .articles-siedebar a div:hover {
+  color: #222;
+}

@@ -1,0 +1,168 @@
+.quiz-ribbon .question .options .option, .quiz-ribbon .question h2, .quiz-ribbon .question .image {
+  box-shadow: 0px 0px 4px 0px #4448;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(../fonts/Lora-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Merriweather;
+  src: url(../fonts/Merriweather-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Lora;
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+.quiz-image {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/quiz.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: -18px;
+  margin-bottom: 18px;
+  border-radius: 18px;
+}
+
+.quiz-ribbon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quiz-ribbon h1 {
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 36px;
+}
+.quiz-ribbon .content {
+  max-width: 702px;
+}
+.quiz-ribbon .content #quizResult {
+  border-radius: 18px;
+  margin-bottom: 18px;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  background-image: url(../images/quizResult.jpg);
+  width: 100%;
+}
+.quiz-ribbon .content #quizResult .gradient {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.77) 0%, rgba(255, 255, 255, 0.4) 41%, rgba(255, 255, 255, 0.71) 100%);
+  padding-bottom: 36px;
+}
+.quiz-ribbon .content #quizResult #quizResultMessage {
+  margin: 0px;
+  color: #111;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+.quiz-ribbon .content #quizResult #congrats {
+  margin: 36px;
+  color: #222;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+.quiz-ribbon .button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.quiz-ribbon .question {
+  padding-left: 54px;
+  padding-right: 54px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+.quiz-ribbon .question .image {
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  padding: 18px 18px 0 18px;
+  background-color: #f4f4f8;
+}
+.quiz-ribbon .question .image img {
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+  border-radius: 6px;
+}
+.quiz-ribbon .question h2 {
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  text-indent: 18px;
+  margin-bottom: 9px;
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #f4f4f8;
+  padding: 18px;
+}
+.quiz-ribbon .question h3 {
+  color: #666;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 18px;
+}
+.quiz-ribbon .question .options {
+  padding-left: 9px;
+}
+.quiz-ribbon .question .options .option {
+  padding: 12px;
+  padding-left: 18px;
+  color: #222;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #f4f4f8;
+  margin-bottom: 9px;
+  border-radius: 6px;
+}
+.quiz-ribbon .question .options .option:hover {
+  cursor: pointer;
+  background-color: #eee;
+  -o-transform: translate(-9px, 0);
+  -ms-transform: translate(-9px, 0);
+  -moz-transform: translate(-9px, 0);
+  -webkit-transform: translate(-9px, 0);
+  transform: translate(-9px, 0);
+  transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+}
+.quiz-ribbon .question .options .right {
+  background-color: #3fad1488;
+  color: #fff;
+}
+.quiz-ribbon .question .options .right:hover {
+  cursor: pointer;
+  background-color: #3fad1488;
+}
+.quiz-ribbon .question .options .wrong {
+  background-color: #b1222288;
+  color: #fff;
+}
+.quiz-ribbon .question .options .wrong:hover {
+  cursor: pointer;
+  background-color: #b1222288;
+}

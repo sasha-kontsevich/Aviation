@@ -1,0 +1,135 @@
+@import "nullstyle.scss";
+@import "header.scss";
+@import "common.scss";
+@import "article.scss";
+@import "catalog.scss";
+@import "quiz.scss";
+.ribbon-wrapper {
+    width: $column-width*12 + $grid*11;
+    display: flex;
+    justify-content: center;
+    @import "sidebar.scss";
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body {
+    background-color: #fff;
+}
+
+.header {
+    @extend %site-header;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: $grid*3;
+    padding-left: $grid;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: $grid;
+    width: 100%;
+}
+
+canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -100;
+}
+
+.ribbon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .space {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #greetings {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            z-index: 100;
+            display: block;
+        }
+    }
+    .box {
+        width: 100%;
+        padding: $grid*2;
+        padding-top: $grid*3;
+        padding-bottom: $grid*3;
+        background: #fffe;
+        // border-top: 2px solid #eeee;
+        // border-bottom: 2px solid #eeee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        p {
+            @extend %text;
+            color: #444;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
+            margin-bottom: $grid*2;
+            margin-top: $grid;
+            text-align: left;
+        }
+        img {
+            min-width: 350px;
+            max-width: 720px;
+            width: 50%;
+            height: auto;
+        }
+        >div {
+            min-width: 240px;
+            max-width: 420px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    h1 {
+        font-size: 36px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        background-color: #fffe;
+        color: #333;
+        padding: $grid;
+    }
+    #box1 {
+        width: 100%;
+    }
+}
+
+.button {
+    text-align: center;
+    padding: 10px 35px 15px 35px;
+    background-color: #d21;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    width: fit-content;
+    border-radius: 6px;
+    margin-bottom: $grid;
+    &:hover {
+        background-color: #c10;
+        cursor: pointer;
+    }
+    @extend %shadow;
+}
+
+img {
+    @extend %text;
+    color: #444;
+    font-size: 16px;
+}

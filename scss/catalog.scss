@@ -1,0 +1,134 @@
+@import "common.scss";
+#topics-block {
+    width: $column-width*4 + $grid*3;
+    margin-right: $grid;
+    min-height: 200px;
+    #topics {
+        min-height: 200px;
+        .item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: $grid/2;
+            background-color: $bgColor;
+            @extend %box;
+            // background-color: #f8f8f8ee;
+            // border-top: 1px #ddd solid;
+            border-bottom: 1px #ddd solid;
+            &:hover {
+                -o-transform: translate(-$grid/2, 0);
+                -ms-transform: translate(-$grid/2, 0);
+                -moz-transform: translate(-$grid/2, 0);
+                -webkit-transform: translate(-$grid/2, 0);
+                transform: translate(-$grid/2, 0);
+                transition: all 0.15s ease-in-out;
+                -o-transition: all 0.15s ease-in-out;
+                -moz-transition: all 0.15s ease-in-out;
+                -webkit-transition: all 0.15s ease-in-out;
+            }
+            .topic-title {
+                height: $grid*2.5;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bolder;
+                font-size: 16px;
+                color: #555;
+                font-weight: 400;
+            }
+            .image {
+                height: $grid*2.5;
+                width: $grid*2.5;
+                margin-right: $grid/2;
+                margin-left: 0px;
+                background-position: center;
+                background-size: cover;
+                border: 1px #eed solid;
+                border-radius: $grid/3;
+            }
+        }
+        .selectedTopic {
+            background-color: #eee!important;
+            & .topic-title {
+                color: #222
+            }
+        }
+    }
+}
+
+#articles-block {
+    width: $column-width*5 + $grid*4;
+    min-height: 200px;
+    #articles {
+        min-height: 200px;
+        .item {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin-bottom: $grid/2;
+            background-color: $bgColor;
+            @extend %box;
+            // border-top: 1px #bbbb solid;
+            // border-bottom: 1px #bbbb solid;
+            &:hover {
+                cursor: pointer;
+            }
+            // border-radius: $grid/2;
+            .title {
+                height: $grid*2.5;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+                color: #555;
+                padding-left: $grid;
+                font-weight: 700;
+            }
+            .image {
+                margin-left: $grid/2;
+                margin-bottom: $grid/2;
+                height: $column-width*3;
+                width: $column-width*5+$grid*3;
+                background-position: center;
+                background-size: cover;
+                border-radius: $grid/3;
+                border: 1px #eed solid;
+            }
+            p {
+                padding-left: $grid*1.5;
+                padding-right: $grid*1.5;
+                padding-bottom: $grid/2;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #333;
+                line-height: 16px;
+                font-size: 12px;
+                text-indent: $grid*1.5;
+            }
+            .button-line {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 10%;
+                .button {
+                    text-align: center;
+                    padding: 10px 30px 10px 30px;
+                    background-color: #d21;
+                    color: #fff;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    width: fit-content;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #c10;
+                    }
+                }
+            }
+            .inner-content {
+                padding-bottom: $grid/6;
+            }
+        }
+    }
+}

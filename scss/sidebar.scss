@@ -1,0 +1,88 @@
+@import "common.scss";
+@mixin section ($color) {
+    color: #888;
+    border-bottom: 3px solid #fff0;
+    border-top: 3px solid #fff0;
+    &:hover {
+        cursor: pointer;
+        background-color: #eee0;
+        color: $color;
+        -o-transform: translate(-$grid, 0);
+        -ms-transform: translate(-$grid, 0);
+        -moz-transform: translate(-$grid, 0);
+        -webkit-transform: translate(-$grid, 0);
+        transform: translate(-$grid, 0);
+        transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+    }
+}
+
+@mixin sectionSelected ($color) {
+    color: $color;
+    border-bottom: 3px solid $color;
+    border-top: 3px solid #eee0;
+}
+
+.sidebar {
+    width: $column-width*3 + $grid*2;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: $grid;
+    .item {
+        height: 50px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        box-sizing: border-box;
+        // @extend %shadow;
+    }
+    .military {
+        @include section($military-color);
+    }
+    .current-military {
+        @include sectionSelected($military-color);
+    }
+    .helicopters {
+        @include section($helicopters-color);
+    }
+    .current-helicopters {
+        @include sectionSelected($helicopters-color);
+    }
+    .civil {
+        @include section($civil-color);
+    }
+    .current-civil {
+        @include sectionSelected($civil-color);
+    }
+    .technology {
+        @include section($technology-color);
+    }
+    .current-technology {
+        @include sectionSelected($technology-color);
+    }
+    .weapon {
+        @include section($weapon-color);
+    }
+    .current-weapon {
+        @include sectionSelected($weapon-color);
+    }
+    .small {
+        @include section($small-color);
+    }
+    .current-small {
+        @include sectionSelected($small-color);
+    }
+    .special {
+        @include section($special-color);
+    }
+    .current-special {
+        @include sectionSelected($special-color);
+    }
+}
