@@ -17,21 +17,18 @@
 </head>
 
 <body>
-    <div class="bg-image">
 
-    </div>
-
-    <div class="container">
         <?php include "modules/header.php"; ?>
-        <div class="container-fluid">
+        <div class="main-container">
             <div class="ribbon">
                 <div class="space" style="height: 700px;" id="greetings">
                 </div>
 
-                <h1>Десятки интереснейших статей</h1>
                 <div class="box">
                     <img src="images/img1.png" alt="" srcset="">
                     <div>
+                    <h1>Десятки интереснейших статей</h1>
+
                         <p>
                             На сайте представлено большое количество статей, посвящённых различным моделям военных и гражданских самолётов, вертолётам, технологиям истории и многому другому. Статьи сгруппированы по темам, каждая из которых расказывает посвящена конкретной предметной области или модели техники. Темы же, в свою очередь сгруппированы в крупные разделы, такие как, например, военные самолёты или авиационные технологии.
                         </p>
@@ -41,9 +38,10 @@
                     </div>
                 </div>
                 <div class="space" style="height: 700px;"></div>
-                <h1>Возможность проверить свои знания</h1>
                 <div class="box">
                     <div>
+                    <h1>Возможность проверить свои знания</h1>
+
                         <p>
                             Проверьте свои знания в авиации, пройдя парочку увлекательных тестов. На сайте есть большое количество тестов с различными вопросами разного уровня сложности
                         </p>
@@ -61,7 +59,6 @@
 
         <?php include "modules/footer.php"; ?>
 
-    </div>
     <div class='canvas-container'></div>
 
     <script src='https://unpkg.com/three@0.99.0/build/three.min.js'></script>
