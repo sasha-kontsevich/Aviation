@@ -11,7 +11,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/style.css">
     <title>Мировая авиация</title>
 </head>
@@ -24,9 +23,9 @@
                 <div class="space" style="height: 700px;" id="greetings">
                 </div>
 
-                <div class="box">
-                    <img src="images/img1.png" alt="" srcset="">
-                    <div>
+                <div class="box container-fluid">
+                    <img src="images/img1.png"  class="col-md-6 col-sm-12" alt="Десятки интереснейших статей" srcset="">
+                    <div class="col-md-6 col-sm-12">
                     <h1>Десятки интереснейших статей</h1>
 
                         <p>
@@ -38,8 +37,8 @@
                     </div>
                 </div>
                 <div class="space" style="height: 700px;"></div>
-                <div class="box">
-                    <div>
+                <div class="box  container-fluid">
+                    <div class="col-md-6 col-sm-12">
                     <h1>Возможность проверить свои знания</h1>
 
                         <p>
@@ -49,7 +48,7 @@
                             <div class="button">Пройти тест</div>
                         </a>
                     </div>
-                    <img src="images/img2.png" alt="" srcset="">
+                    <img src="images/img2.png"  class="col-md-6 col-sm-12" alt="Возможность проверить свои знания" srcset="">
                 </div>
                 <div class="space" style="height: 500px;"></div>
                 <div class="space" style="height: 500px;"></div>
@@ -60,7 +59,6 @@
         <?php include "modules/footer.php"; ?>
 
     <div class='canvas-container'></div>
-
     <script src='https://unpkg.com/three@0.99.0/build/three.min.js'></script>
     <script src='https://unpkg.com/three@0.99.0/examples/js/loaders/OBJLoader.js'></script>
     <script src='https://unpkg.com/three@0.99.0/examples/js/loaders/MTLLoader.js'></script>
@@ -86,7 +84,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/plugins/CSSPlugin.min.js"></script> -->
     <script src="js/bg.js"></script>
-
 </body>
 
 </html>

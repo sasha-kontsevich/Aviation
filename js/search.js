@@ -22,7 +22,7 @@ search.addEventListener('input', function() {
             showSearchResult()
             resultList.forEach(element => {
                 results.innerHTML += `
-                <a href="` + data.getAttribute("data-path") + `article.php?article=/` + element.name + `">
+                <a href="article.php?article=` + element.name + `">
                     <div class = "item">
                         <div class = "image" style="background-image: url(images/` + element.name + `_main.jpg)"></div>
                         <div class="title">
@@ -50,7 +50,7 @@ search.addEventListener('focus', function() {
 search.addEventListener('blur', function() {
     setTimeout(function() {
         hideSearchResult()
-    }, 1000);
+    }, 300);
 });
 
 function hideSearchResult() {
