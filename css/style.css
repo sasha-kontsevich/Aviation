@@ -90,11 +90,11 @@ h6 {
 }
 
 /*--------------------*/
-.button, .quiz-ribbon .question .options .option, .quiz-ribbon .question h2, .quiz-ribbon .question .image, .article-wrapper .image-wrapper img, .article-wrapper .main-image-wrapper .main-image, .article-wrapper .header, header, #articles-block #articles .item, #topics-block #topics .item {
+.button, .quiz-ribbon .question .options .option, .quiz-ribbon .question h2, .quiz-ribbon .question .image, .article-wrapper .image-wrapper img, .article-wrapper .main-image-wrapper .main-image, .article-wrapper .header, header, #articles-block #articles .item, #topics-block #topics .item, header .search-wrapper #search-results {
   box-shadow: 0px 0px 5px 0px #4448;
 }
 
-#articles-block #articles .item, #topics-block #topics .item {
+#articles-block #articles .item, #topics-block #topics .item, header .search-wrapper #search-results {
   background-color: #fbfbfd;
   border-radius: 6px;
 }
@@ -128,10 +128,6 @@ img, .ribbon .box p, .article-wrapper .preamble {
   font-family: Lora;
   src: url(../fonts/Merriweather-Light.ttf);
 }
-.header-margin {
-  height: 108px;
-}
-
 header {
   z-index: 100;
   position: fixed;
@@ -199,6 +195,40 @@ header .search-wrapper form input {
 header .search-wrapper form input:focus {
   border-color: #aaa;
 }
+header .search-wrapper #search-results {
+  flex-direction: column;
+  width: 350px;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 9px;
+}
+header .search-wrapper #search-results a > div {
+  display: flex;
+  align-items: center;
+}
+header .search-wrapper #search-results a > div .image {
+  height: 48px;
+  width: 48px;
+  border-radius: 6px;
+  margin: 3px;
+  margin-right: 9px;
+  background-position: center;
+  background-size: cover;
+}
+header .search-wrapper #search-results a > div .title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: #555;
+}
+header .search-wrapper #search-results a > div .title > span {
+  color: #444;
+  font-size: 16px;
+  font-weight: 500;
+}
+header .search-wrapper #search-results a > div:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
 
 footer {
   width: 100%;
@@ -248,11 +278,11 @@ footer nav div:hover {
   color: #d21;
 }
 
-.button, .quiz-ribbon .question .options .option, .quiz-ribbon .question h2, .quiz-ribbon .question .image, .article-wrapper .image-wrapper img, .article-wrapper .main-image-wrapper .main-image, .article-wrapper .header, #articles-block #articles .item, #topics-block #topics .item, header {
+.button, .quiz-ribbon .question .options .option, .quiz-ribbon .question h2, .quiz-ribbon .question .image, .article-wrapper .image-wrapper img, .article-wrapper .main-image-wrapper .main-image, .article-wrapper .header, #articles-block #articles .item, #topics-block #topics .item, header, header .search-wrapper #search-results {
   box-shadow: 0px 0px 5px 0px #4448;
 }
 
-#articles-block #articles .item, #topics-block #topics .item {
+#articles-block #articles .item, #topics-block #topics .item, header .search-wrapper #search-results {
   background-color: #fbfbfd;
   border-radius: 6px;
 }
@@ -286,11 +316,11 @@ img, .ribbon .box p, .article-wrapper .preamble {
   font-family: Lora;
   src: url(../fonts/Merriweather-Light.ttf);
 }
-.button, .quiz-ribbon .question .options .option, .quiz-ribbon .question h2, .quiz-ribbon .question .image, .article-wrapper .image-wrapper img, .article-wrapper .main-image-wrapper .main-image, .article-wrapper .header, #articles-block #articles .item, #topics-block #topics .item, header {
+.button, .quiz-ribbon .question .options .option, .quiz-ribbon .question h2, .quiz-ribbon .question .image, .article-wrapper .image-wrapper img, .article-wrapper .main-image-wrapper .main-image, .article-wrapper .header, #articles-block #articles .item, #topics-block #topics .item, header, header .search-wrapper #search-results {
   box-shadow: 0px 0px 5px 0px #4448;
 }
 
-#articles-block #articles .item, #topics-block #topics .item {
+#articles-block #articles .item, #topics-block #topics .item, header .search-wrapper #search-results {
   background-color: #fbfbfd;
   border-radius: 6px;
 }
@@ -455,11 +485,11 @@ img, .ribbon .box p, .article-wrapper .preamble {
   color: #222;
 }
 
-.button, .quiz-ribbon .question .options .option, .quiz-ribbon .question h2, .quiz-ribbon .question .image, #articles-block #articles .item, #topics-block #topics .item, header, .article-wrapper .header, .article-wrapper .main-image-wrapper .main-image, .article-wrapper .image-wrapper img {
+.button, .quiz-ribbon .question .options .option, .quiz-ribbon .question h2, .quiz-ribbon .question .image, #articles-block #articles .item, #topics-block #topics .item, header, header .search-wrapper #search-results, .article-wrapper .header, .article-wrapper .main-image-wrapper .main-image, .article-wrapper .image-wrapper img {
   box-shadow: 0px 0px 5px 0px #4448;
 }
 
-#articles-block #articles .item, #topics-block #topics .item {
+#articles-block #articles .item, #topics-block #topics .item, header .search-wrapper #search-results {
   background-color: #fbfbfd;
   border-radius: 6px;
 }
@@ -620,11 +650,11 @@ img, .ribbon .box p, .article-wrapper .preamble {
   padding-bottom: 3px;
 }
 
-.button, .quiz-ribbon .question .options .option, .quiz-ribbon .question h2, .quiz-ribbon .question .image, header, .article-wrapper .header, .article-wrapper .main-image-wrapper .main-image, .article-wrapper .image-wrapper img, #topics-block #topics .item, #articles-block #articles .item {
+.button, .quiz-ribbon .question .options .option, .quiz-ribbon .question h2, .quiz-ribbon .question .image, header, header .search-wrapper #search-results, .article-wrapper .header, .article-wrapper .main-image-wrapper .main-image, .article-wrapper .image-wrapper img, #topics-block #topics .item, #articles-block #articles .item {
   box-shadow: 0px 0px 5px 0px #4448;
 }
 
-#topics-block #topics .item, #articles-block #articles .item {
+header .search-wrapper #search-results, #topics-block #topics .item, #articles-block #articles .item {
   background-color: #fbfbfd;
   border-radius: 6px;
 }
@@ -812,10 +842,10 @@ img, .ribbon .box p, .article-wrapper .preamble {
   display: flex;
   justify-content: center;
 }
-.ribbon-wrapper .button, .ribbon-wrapper #topics-block #topics .item, #topics-block #topics .ribbon-wrapper .item, .ribbon-wrapper #articles-block #articles .item, #articles-block #articles .ribbon-wrapper .item, .ribbon-wrapper header, .ribbon-wrapper .article-wrapper .header, .article-wrapper .ribbon-wrapper .header, .ribbon-wrapper .article-wrapper .main-image-wrapper .main-image, .article-wrapper .main-image-wrapper .ribbon-wrapper .main-image, .ribbon-wrapper .article-wrapper .image-wrapper img, .article-wrapper .image-wrapper .ribbon-wrapper img, .ribbon-wrapper .quiz-ribbon .question .image, .quiz-ribbon .question .ribbon-wrapper .image, .ribbon-wrapper .quiz-ribbon .question h2, .quiz-ribbon .question .ribbon-wrapper h2, .ribbon-wrapper .quiz-ribbon .question .options .option, .quiz-ribbon .question .options .ribbon-wrapper .option {
+.ribbon-wrapper .button, .ribbon-wrapper header .search-wrapper #search-results, header .search-wrapper .ribbon-wrapper #search-results, .ribbon-wrapper #topics-block #topics .item, #topics-block #topics .ribbon-wrapper .item, .ribbon-wrapper #articles-block #articles .item, #articles-block #articles .ribbon-wrapper .item, .ribbon-wrapper header, .ribbon-wrapper .article-wrapper .header, .article-wrapper .ribbon-wrapper .header, .ribbon-wrapper .article-wrapper .main-image-wrapper .main-image, .article-wrapper .main-image-wrapper .ribbon-wrapper .main-image, .ribbon-wrapper .article-wrapper .image-wrapper img, .article-wrapper .image-wrapper .ribbon-wrapper img, .ribbon-wrapper .quiz-ribbon .question .image, .quiz-ribbon .question .ribbon-wrapper .image, .ribbon-wrapper .quiz-ribbon .question h2, .quiz-ribbon .question .ribbon-wrapper h2, .ribbon-wrapper .quiz-ribbon .question .options .option, .quiz-ribbon .question .options .ribbon-wrapper .option {
   box-shadow: 0px 0px 5px 0px #4448;
 }
-.ribbon-wrapper #topics-block #topics .item, #topics-block #topics .ribbon-wrapper .item, .ribbon-wrapper #articles-block #articles .item, #articles-block #articles .ribbon-wrapper .item {
+.ribbon-wrapper header .search-wrapper #search-results, header .search-wrapper .ribbon-wrapper #search-results, .ribbon-wrapper #topics-block #topics .item, #topics-block #topics .ribbon-wrapper .item, .ribbon-wrapper #articles-block #articles .item, #articles-block #articles .ribbon-wrapper .item {
   background-color: #fbfbfd;
   border-radius: 6px;
 }
