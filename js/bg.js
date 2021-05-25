@@ -67,7 +67,7 @@ clearPickPosition();
 var scene = new THREE.Scene();
 scene.name = "AircraftsScene"
 var camera = new THREE.PerspectiveCamera(40, getWidth() / getHeight(), 0.1, 4000);
-
+var kFOV = getHeight() / getWidth();
 var renderer = new THREE.WebGLRenderer({ antialias: true });
 scene.background = new THREE.Color('white');
 renderer.setSize(getWidth(), getHeight());
@@ -128,9 +128,11 @@ function onWindowResize() {
     composer.setSize(getWidth(), getHeight());
 
     if (scene.getObjectByName('text')) {
-        scale = textScale * Math.pow(getWidth() / getHeight(), 3);
+        scale = textScale * Math.pow(getWidth() / getHeight(), 1);
         scene.getObjectByName('text').getObjectByName('mesh').scale.set(scale, scale, scale);
     }
+    // camera.fov = 40 * kFOV * getHeight() / getWidth();
+    console.log(camera.fov)
 }
 
 var clock = new THREE.Clock();
@@ -209,7 +211,7 @@ plane.castShadow = true;
 plane.name = 'plane';
 scene.add(plane);
 
-let modelsOffsetZ = 20;
+let modelsOffsetZ = 30;
 //Corsair
 OBJ_LOADER.load('models/corsair.obj', (object) => {
     scale = 0.002;
