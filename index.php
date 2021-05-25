@@ -5,7 +5,7 @@
 ?>
 
 <head>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,46 +17,49 @@
 
 <body>
 
-        <?php include "modules/header.php"; ?>
-        <div class="main-container">
-            <div class="ribbon">
-                <div class="space" style="height: 700px;" id="greetings">
-                </div>
+    <?php include "modules/header.php"; ?>
+    <div class="main-container">
+        <div class="container">
+            <div class="space" style="height: 700px;" id="greetings">
+            </div>
 
-                <div class="box container-fluid">
-                    <img src="images/img1.png"  class="col-md-6 col-sm-12" alt="Десятки интереснейших статей" srcset="">
-                    <div class="col-md-6 col-sm-12">
+            <div class="box row">
+                <div class="col-md-7 col-sm-12">
+                    <img src="images/img1.png" alt="Десятки интереснейших статей" srcset="">
+
+                </div>
+                <div class="col-md-5 col-sm-12">
                     <h1>Десятки интереснейших статей</h1>
 
-                        <p>
-                            На сайте представлено большое количество статей, посвящённых различным моделям военных и гражданских самолётов, вертолётам, технологиям истории и многому другому. Статьи сгруппированы по темам, каждая из которых расказывает посвящена конкретной предметной области или модели техники. Темы же, в свою очередь сгруппированы в крупные разделы, такие как, например, военные самолёты или авиационные технологии.
-                        </p>
-                        <a href="catalog.php">
-                            <div class="button">Каталог</div>
-                        </a>
-                    </div>
+                    <p>
+                        На сайте представлено большое количество статей, посвящённых различным моделям военных и гражданских самолётов, вертолётам, технологиям истории и многому другому. Статьи сгруппированы по темам, каждая из которых расказывает посвящена конкретной предметной области или модели техники. Темы же, в свою очередь сгруппированы в крупные разделы, такие как, например, военные самолёты или авиационные технологии.
+                    </p>
+                    <a href="catalog.php">
+                        <div class="button">Каталог</div>
+                    </a>
                 </div>
-                <div class="space" style="height: 700px;"></div>
-                <div class="box  container-fluid">
-                    <div class="col-md-6 col-sm-12">
+            </div>
+            <div class="space" style="height: 700px;"></div>
+            <div class="box   row">
+                <div class="col-md-6 col-sm-12">
                     <h1>Возможность проверить свои знания</h1>
 
-                        <p>
-                            Проверьте свои знания в авиации, пройдя парочку увлекательных тестов. На сайте есть большое количество тестов с различными вопросами разного уровня сложности
-                        </p>
-                        <a href="quiz.php">
-                            <div class="button">Пройти тест</div>
-                        </a>
-                    </div>
-                    <img src="images/img2.png"  class="col-md-6 col-sm-12" alt="Возможность проверить свои знания" srcset="">
+                    <p>
+                        Проверьте свои знания в авиации, пройдя парочку увлекательных тестов. На сайте есть большое количество тестов с различными вопросами разного уровня сложности
+                    </p>
+                    <a href="quiz.php">
+                        <div class="button">Пройти тест</div>
+                    </a>
                 </div>
-                <div class="space" style="height: 500px;"></div>
-                <div class="space" style="height: 500px;"></div>
+                <img src="images/img2.png" class="col-md-6 col-sm-12" alt="Возможность проверить свои знания" srcset="">
             </div>
+            <div class="space" style="height: 500px;"></div>
+            <div class="space" style="height: 500px;"></div>
         </div>
-        <div id="data" data-path="<?= $_SESSION['path'] ?>"></div>
+    </div>
+    <div id="data" data-path="<?= $_SESSION['path'] ?>"></div>
 
-        <?php include "modules/footer.php"; ?>
+    <?php include "modules/footer.php"; ?>
 
     <div class='canvas-container'></div>
     <script src='https://unpkg.com/three@0.99.0/build/three.min.js'></script>

@@ -28,15 +28,16 @@
                 <div class="col-md-1 col-sm-12"></div>
                 <div class="col-md-6 col-sm-12">
                     <nav class="row">
-                        <a href="catalog.php" class="col-md-2">
+                        <a href="catalog.php" class="col-md-4">
                             <div id="headerCatalog">Каталог</div>
                         </a>
-                        <a href="#" onclick="randomArticle()" class="col-md-7">
-                            <div>Случайная статья</div>
-                        </a>
-                        <a href="quiz.php" class="col-md-3">
+                        <a href="quiz.php" class="col-md-4">
                             <div id="headerQuiz">Викторины</div>
                         </a>
+                        <a href="#" onclick="randomArticle()" class="col-md-4">
+                            <div>Случайная</div>
+                        </a>
+
                     </nav>
                 </div>
             </div>

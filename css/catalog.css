@@ -1,9 +1,9 @@
 #articles-block #articles .item, #topics-block #topics .item {
-  box-shadow: 0px 0px 4px 0px #4448;
+  box-shadow: 0px 0px 3px 0px #4448;
 }
 
 #articles-block #articles .item, #topics-block #topics .item {
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
   border-radius: 6px;
 }
 
@@ -23,6 +23,23 @@
   font-family: Lora;
   src: url(../fonts/Merriweather-Light.ttf);
 }
+.help {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  height: 54px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  color: #444;
+}
+.help i {
+  margin-right: 6px;
+  margin-top: 2px;
+  color: #888;
+}
+
 #topics-block {
   width: 342px;
   margin-right: 18px;
@@ -36,7 +53,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 9px;
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
   border-bottom: 1px #ddd solid;
 }
 #topics-block #topics .item:hover {
@@ -90,7 +107,7 @@
   justify-content: flex-start;
   flex-direction: column;
   margin-bottom: 9px;
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
 }
 #articles-block #articles .item:hover {
   cursor: pointer;

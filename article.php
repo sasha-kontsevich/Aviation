@@ -17,32 +17,31 @@ $_SESSION['article'] = $_GET['article'];
 
 
 <body>
-<?php include "modules/header.php"; ?>
+    <?php include "modules/header.php"; ?>
 
-    <div class="container">
+    <div class="container h100vh">
         <!-- HEADER -->
-        <div class="container-fluid">
-            <div class="ribbon-wrapper">
+        <div class="ribbon-wrapper">
 
-                <!-- SIDEBAR -->
-                <div class="sidebar-wrapper">
-                    <?php include "modules/sidebar.php"; ?>
-                    <div class="articles-siedebar" id="alsoTopicWrapper">
-                        <div class="header">Также из этой темы</div>
-                        <div id="alsoTopic"></div>
-                    </div>
-                </div>
-                <!-- ARTICLE -->
-                <div class="article-wrapper">
-                    <?php //include "modules/article_header.php"; 
-                    ?>
-                    <?php include "articles/" . $_SESSION['article'] . ".php"; ?>
-
+            <!-- SIDEBAR -->
+            <div class="sidebar-wrapper">
+                <?php include "modules/sidebar.php"; ?>
+                <div class="articles-siedebar" id="alsoTopicWrapper">
+                    <div class="header">Также из этой темы</div>
+                    <div id="alsoTopic"></div>
                 </div>
             </div>
+            <!-- ARTICLE -->
+            <div class="article-wrapper">
+                <?php //include "modules/article_header.php"; 
+                ?>
+                <?php include "articles/" . $_SESSION['article'] . ".php"; ?>
+
+            </div>
         </div>
-        <div id="data" data-article="<?= $_SESSION['article'] ?>"></div>
-        <?php include "modules/footer.php"; ?>
+    </div>
+    <div id="data" data-article="<?= $_SESSION['article'] ?>"></div>
+    <?php include "modules/footer.php"; ?>
 
     </div>
     <script src="<?= $_SESSION['path'] ?>js/sidebar.js"></script>

@@ -95,11 +95,11 @@ h6 {
 }
 
 #articles-block #articles .item, #topics-block #topics .item, header .search-wrapper #search-results {
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
   border-radius: 6px;
 }
 
-img, .ribbon .box p, .article-wrapper .preamble {
+img, .container .box p, .article-wrapper .preamble {
   text-indent: 27px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
@@ -302,11 +302,11 @@ footer .copyright {
 }
 
 #articles-block #articles .item, #topics-block #topics .item, header .search-wrapper #search-results {
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
   border-radius: 6px;
 }
 
-img, .ribbon .box p, .article-wrapper .preamble {
+img, .container .box p, .article-wrapper .preamble {
   text-indent: 27px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
@@ -340,11 +340,11 @@ img, .ribbon .box p, .article-wrapper .preamble {
 }
 
 #articles-block #articles .item, #topics-block #topics .item, header .search-wrapper #search-results {
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
   border-radius: 6px;
 }
 
-img, .ribbon .box p, .article-wrapper .preamble {
+img, .container .box p, .article-wrapper .preamble {
   text-indent: 27px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
@@ -509,11 +509,11 @@ img, .ribbon .box p, .article-wrapper .preamble {
 }
 
 #articles-block #articles .item, #topics-block #topics .item, header .search-wrapper #search-results {
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
   border-radius: 6px;
 }
 
-img, .ribbon .box p, .article-wrapper .preamble {
+img, .container .box p, .article-wrapper .preamble {
   text-indent: 27px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
@@ -542,6 +542,23 @@ img, .ribbon .box p, .article-wrapper .preamble {
   font-family: Lora;
   src: url(../fonts/Merriweather-Light.ttf);
 }
+.help {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  height: 54px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  color: #444;
+}
+.help i {
+  margin-right: 6px;
+  margin-top: 2px;
+  color: #888;
+}
+
 #topics-block {
   width: 342px;
   margin-right: 18px;
@@ -555,7 +572,7 @@ img, .ribbon .box p, .article-wrapper .preamble {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 9px;
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
   border-bottom: 1px #ddd solid;
 }
 #topics-block #topics .item:hover {
@@ -609,7 +626,7 @@ img, .ribbon .box p, .article-wrapper .preamble {
   justify-content: flex-start;
   flex-direction: column;
   margin-bottom: 9px;
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
 }
 #articles-block #articles .item:hover {
   cursor: pointer;
@@ -674,11 +691,11 @@ img, .ribbon .box p, .article-wrapper .preamble {
 }
 
 header .search-wrapper #search-results, #topics-block #topics .item, #articles-block #articles .item {
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
   border-radius: 6px;
 }
 
-img, .ribbon .box p, .article-wrapper .preamble {
+img, .container .box p, .article-wrapper .preamble {
   text-indent: 27px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
@@ -785,7 +802,7 @@ img, .ribbon .box p, .article-wrapper .preamble {
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   padding: 18px 18px 0 18px;
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
 }
 .quiz-ribbon .question .image img {
   width: 100%;
@@ -802,7 +819,7 @@ img, .ribbon .box p, .article-wrapper .preamble {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-weight: 500;
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
   padding: 18px;
 }
 .quiz-ribbon .question h3 {
@@ -822,7 +839,7 @@ img, .ribbon .box p, .article-wrapper .preamble {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   font-weight: 400;
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
   margin-bottom: 9px;
   border-radius: 6px;
 }
@@ -861,11 +878,11 @@ img, .ribbon .box p, .article-wrapper .preamble {
 }
 
 header .search-wrapper #search-results, #topics-block #topics .item, #articles-block #articles .item {
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
   border-radius: 6px;
 }
 
-img, .ribbon .box p, .article-wrapper .preamble {
+img, .container .box p, .article-wrapper .preamble {
   text-indent: 27px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
@@ -1109,20 +1126,13 @@ canvas {
   z-index: -100;
 }
 
-.ribbon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
-}
-.ribbon .space {
+.container .space {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ribbon .space #greetings {
+.container .space #greetings {
   position: absolute;
   top: 10px;
   width: 100%;
@@ -1130,17 +1140,16 @@ canvas {
   z-index: 100;
   display: block;
 }
-.ribbon .box {
-  width: 100%;
+.container .box {
+  border-radius: 36px;
   padding-top: 54px;
   padding-bottom: 54px;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
-.ribbon .box h1 {
+.container .box h1 {
   font-size: 28px;
   font-family: "Roboto", sans-serif;
   background-color: #fffe;
@@ -1148,7 +1157,7 @@ canvas {
   padding: 9px 36px;
   text-align: center;
 }
-.ribbon .box p {
+.container .box p {
   color: #444;
   font-size: 18px;
   line-height: 24px;
@@ -1156,11 +1165,11 @@ canvas {
   margin-bottom: 36px;
   text-align: left;
 }
-.ribbon .box img {
+.container .box img {
   width: 100%;
   height: auto;
 }
-.ribbon .box > div {
+.container .box > div {
   min-width: 240px;
   max-width: 420px;
   display: flex;
@@ -1168,7 +1177,7 @@ canvas {
   flex-direction: column;
   align-items: center;
 }
-.ribbon #box1 {
+.container #box1 {
   width: 100%;
 }
 
@@ -1196,4 +1205,8 @@ img {
 
 a:hover {
   text-decoration: none;
+}
+
+.h100vh {
+  min-height: 100vh;
 }

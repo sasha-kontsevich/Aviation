@@ -101,6 +101,13 @@ load();
 $('.inner-content').hide();
 $('.current-article').slideDown(400);
 
+if (!currentSection) {
+    topics.innerHTML = '<div class="help"><i class="fas fa-arrow-left"></i> Выберите раздел</div>';
+}
+if (!currentTopic && currentSection) {
+    articles.innerHTML = '<div class="help"><i class="fas fa-arrow-left"></i> Выберите тему</div>';
+}
+
 // for (let i = 0; i < articlesInner.length; i++) {
 //     const element = articlesInner[i];
 //     if (!element.classList.contains("")) {
