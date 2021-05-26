@@ -40,11 +40,14 @@
 
                     </nav>
                 </div>
+                <div class="col-sm-12" id="headerAdditionally">
+                    <? include 'modules/sidebar.php' ?>
+                </div>
             </div>
 
         </div>
     </div>
 </header>
-<div class="header-margin"></div>
+<!-- <div class="header-margin"></div> -->
 
 <script src="js/randomArticle.js"></script>

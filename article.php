@@ -21,10 +21,10 @@ $_SESSION['article'] = $_GET['article'];
 
     <div class="container h100vh">
         <!-- HEADER -->
-        <div class="ribbon-wrapper">
+        <div class="row">
 
             <!-- SIDEBAR -->
-            <div class="sidebar-wrapper">
+            <div class="sidebar-wrapper col-md-4 col-sm-1">
                 <?php include "modules/sidebar.php"; ?>
                 <div class="articles-siedebar" id="alsoTopicWrapper">
                     <div class="header">Также из этой темы</div>
@@ -32,7 +32,7 @@ $_SESSION['article'] = $_GET['article'];
                 </div>
             </div>
             <!-- ARTICLE -->
-            <div class="article-wrapper">
+            <div class="article-wrapper  col-md-7 col-sm-11">
                 <?php //include "modules/article_header.php"; 
                 ?>
                 <?php include "articles/" . $_SESSION['article'] . ".php"; ?>

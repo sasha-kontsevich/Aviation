@@ -12,7 +12,7 @@ header {
         }
     }
     z-index: 100;
-    position: fixed;
+    // position: fixed;
     background-color: #fff;
     // border-bottom: 1px #ccc8 solid;
     width: 100%;
@@ -47,7 +47,9 @@ header {
             color: #666;
             font-size: 16px;
             display: flex;
-            justify-content: center;
+            justify-content: left;
+            padding-left: $grid;
+            padding-right: $grid;
             align-items: center;
             height: $grid*3;
             &:hover {
@@ -136,6 +138,7 @@ header {
 
 footer {
     // border-top: 2px solid #aaa;
+    @extend %shadow;
     .logo {
         display: flex;
         justify-content: center;
@@ -143,6 +146,7 @@ footer {
         img {
             height: $grid*2.5;
             width: auto;
+            margin: $grid/2;
         }
         h1 {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -160,7 +164,7 @@ footer {
             color: #444;
             font-size: 14px;
             display: flex;
-            justify-content: center;
+            justify-content: left;
             align-items: center;
             padding: $grid/6 0;
             &:hover {
@@ -177,4 +181,8 @@ footer {
         font-size: 12px;
         padding: $grid/3 0;
     }
+}
+
+#headerAdditionally {
+    display: none;
 }

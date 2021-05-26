@@ -24,11 +24,11 @@
             </div>
 
             <div class="box row">
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <img src="images/img1.png" alt="Десятки интереснейших статей" srcset="">
 
                 </div>
-                <div class="col-md-5 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <h1>Десятки интереснейших статей</h1>
 
                     <p>
@@ -53,8 +53,19 @@
                 </div>
                 <img src="images/img2.png" class="col-md-6 col-sm-12" alt="Возможность проверить свои знания" srcset="">
             </div>
-            <div class="space" style="height: 500px;"></div>
-            <div class="space" style="height: 500px;"></div>
+            <div class="space" style="height: 700px;"></div>
+            <div class="box row d-flex flex-column">
+                <h1>Не знаете с какой статьи начать своё путешествие?</h1>
+                <div class="button"  onclick="randomArticle()">Случайная</div>
+            </div>
+            <div class="space" style="height: 0px;"></div>
+
+            <!-- <div class="row">
+                <div class="col-md-3 aircraft-wrapper"></div>
+                <div class="col-md-3 aircraft-wrapper"></div>
+                <div class="col-md-3 aircraft-wrapper"></div>
+                <div class="col-md-3 aircraft-wrapper"></div>
+            </div> -->
         </div>
     </div>
     <div id="data" data-path="<?= $_SESSION['path'] ?>"></div>

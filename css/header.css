@@ -1,9 +1,9 @@
-header, header .search-wrapper #search-results {
-  box-shadow: 0px 0px 5px 0px #4448;
+footer, header, header .search-wrapper #search-results {
+  box-shadow: 0px 0px 3px 0px #4448;
 }
 
 header .search-wrapper #search-results {
-  background-color: #fbfbfd;
+  background-color: #fbfbfb;
   border-radius: 6px;
 }
 
@@ -25,7 +25,6 @@ header .search-wrapper #search-results {
 }
 header {
   z-index: 100;
-  position: fixed;
   background-color: #fff;
   width: 100%;
   display: flex;
@@ -68,7 +67,9 @@ header nav a {
   color: #666;
   font-size: 16px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 18px;
+  padding-right: 18px;
   align-items: center;
   height: 54px;
 }
@@ -158,6 +159,7 @@ footer .logo {
 footer .logo img {
   height: 45px;
   width: auto;
+  margin: 9px;
 }
 footer .logo h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -175,7 +177,7 @@ footer nav div {
   color: #444;
   font-size: 14px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   padding: 3px 0;
 }
@@ -190,4 +192,8 @@ footer .copyright {
   color: #555;
   font-size: 12px;
   padding: 6px 0;
+}
+
+#headerAdditionally {
+  display: none;
 }

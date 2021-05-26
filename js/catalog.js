@@ -1,7 +1,10 @@
+document.getElementById('headerAdditionally').innerHTML = '';
+let sections = document.getElementById('sections');
 let topics = document.getElementById('topics');
 let articles = document.getElementById('articles');
 $('#headerCatalog').addClass('selected');
 
+var currentTab = 0;
 
 let currentSection = document.getElementById("data").getAttribute("data-section");
 let currentTopic = document.getElementById("data").getAttribute("data-topic");
@@ -56,7 +59,7 @@ function load() {
                     <div class = "item"   onclick="show('` + element.name + `')">
                         <div class="title">` + element.title + `</div>
                         <div class="inner-content  ` + addCurrentArticleClass() + `" id="` + element.name + `">
-                            <div class = "image" style="background-image: url(images/` + element.name + `_main.jpg)"></div>
+                            <div class="d-flex justify-content-center"><div class = "image" style="background-image: url(images/` + element.name + `_main.jpg)"></div></div>
                             <p>
                                 ` + element.articlePreview + `
                             </p>
@@ -108,9 +111,74 @@ if (!currentTopic && currentSection) {
     articles.innerHTML = '<div class="help"><i class="fas fa-arrow-left"></i> Выберите тему</div>';
 }
 
-// for (let i = 0; i < articlesInner.length; i++) {
-//     const element = articlesInner[i];
-//     if (!element.classList.contains("")) {
-//         element.Hide();
-//     }
-// }
+function sectionsTab() {
+    if (getWidth() < 750) {
+        $('#sections').slideDown()
+        $('#topics').slideUp()
+        $('#articles').slideUp()
+
+    }
+}
+
+function topicsTab() {
+    if (getWidth() < 750) {
+
+        $('#sections').slideUp()
+        $('#topics').slideDown()
+        $('#articles').slideUp()
+    }
+}
+
+function articlesTab() {
+    if (getWidth() < 750) {
+
+        $('#sections').slideUp()
+        $('#topics').slideUp()
+        $('#articles').slideDown()
+    }
+}
+if (getWidth() < 750) {
+    if (currentTopic != '') {
+        currentTab = 2;
+        $('#sections').slideUp()
+        $('#topics').slideUp()
+        $('#articles').slideDown()
+
+
+    } else if (currentSection != '') {
+        currentTab = 1;
+        $('#sections').slideUp()
+        $('#topics').slideDown()
+        $('#articles').slideUp()
+
+
+    } else {
+        currentTab = 0;
+        $('#sections').slideDown()
+        $('#topics').slideUp()
+        $('#articles').slideUp()
+
+    }
+}
+
+window.addEventListener('resize', function() {
+    if (getWidth() >= 750) {
+        $('#sections').show()
+        $('#topics').show()
+        $('#articles').show()
+    }
+})
+
+function getWidth() {
+    xWidth = null;
+    if (window.screen != null)
+        xWidth = window.screen.availWidth;
+
+    if (window.innerWidth != null)
+        xWidth = window.innerWidth;
+
+    if (document.body != null)
+        xWidth = document.body.clientWidth;
+
+    return xWidth;
+}

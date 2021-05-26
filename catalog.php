@@ -24,19 +24,22 @@ $_SESSION['topic'] = $_GET['topic'];
     <div class="container h100vh">
 
 
-        <div class="ribbon-wrapper">
+        <div class="row">
             <!-- SECTIONS -->
-            <?php include "modules/sidebar.php"; ?>
+            <div class="col-md-3">
+                <?php include "modules/sidebar.php"; ?>
+
+            </div>
 
             <!-- TOPICS -->
-            <div id="topics-block">
-                <div class="header">Темы</div>
+            <div id="topics-block" class="col-md-4">
+                <div class="header" id="topicsHeader" onclick="topicsTab()">Темы</div>
                 <div id="topics" class="topics"></div>
 
                 <!-- ARTICLES -->
             </div>
-            <div id="articles-block">
-                <div class="header">Статьи</div>
+            <div id="articles-block" class="col-md-5">
+                <div class="header" id="articlesHeader" onclick="articlesTab()">Статьи</div>
                 <div id="articles" class="articles"></div>
 
             </div>

@@ -112,6 +112,12 @@ canvas {
     @extend %shadow;
 }
 
+.aircraft-wrapper {
+    background-color: $bgColor;
+    border-radius: $grid*3;
+    min-height: 300px
+}
+
 img {
     @extend %text;
     color: #444;

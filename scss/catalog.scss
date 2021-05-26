@@ -17,11 +17,8 @@
 }
 
 #topics-block {
-    width: $column-width*4 + $grid*3;
-    margin-right: $grid;
-    min-height: 200px;
+    // width: $column-width*4 + $grid*3;
     #topics {
-        min-height: 200px;
         .item {
             display: flex;
             justify-content: flex-start;
@@ -72,13 +69,14 @@
             }
         }
     }
+    #topicsHeader {
+        cursor: pointer;
+    }
 }
 
 #articles-block {
-    width: $column-width*5 + $grid*4;
-    min-height: 200px;
+    // width: $column-width*5 + $grid*4;
     #articles {
-        min-height: 200px;
         .item {
             display: flex;
             justify-content: flex-start;
@@ -104,10 +102,10 @@
                 font-weight: 700;
             }
             .image {
-                margin-left: $grid/2;
+                // margin-left: $grid/2;
                 margin-bottom: $grid/2;
                 height: $column-width*3;
-                width: $column-width*5+$grid*3;
+                width: 95%;
                 background-position: center;
                 background-size: cover;
                 border-radius: $grid/3;
@@ -147,5 +145,8 @@
                 padding-bottom: $grid/6;
             }
         }
+    }
+    #articlesHeader {
+        cursor: pointer;
     }
 }
