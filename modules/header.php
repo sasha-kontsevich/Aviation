@@ -6,16 +6,14 @@
             <div class="logo">
                 <a href="index.php">
                     <img src="images/logo1.svg" alt="Мировая авиация" srcset="">
-
                 </a>
-
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="row collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="col-md-1 col-sm-12 logo">
-
                 </div>
                 <div class="col-md-1  col-sm-12 "></div>
                 <div class="col-md-3 col-sm-12 search-wrapper">
@@ -44,7 +42,6 @@
                     <? include 'modules/sidebar.php' ?>
                 </div>
             </div>
-
         </div>
     </div>
 </header>
