@@ -63,7 +63,7 @@
     p {
         text-indent: $grid*1.5;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #555;
+        color: #333;
         line-height: 20px;
         font-weight: 400;
         font-size: 16px;
@@ -76,15 +76,15 @@
         font-weight: bold;
         font-size: 32px;
         margin-bottom: $grid;
-        padding-left: $grid;
+        padding-left: $grid*1.5;
     }
     h2 {
         color: #444;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 18px;
         margin-bottom: $grid/2;
-        padding-left: $grid/2;
+        padding-left: $grid*1.5;
     }
     .image-wrapper {
         width: 100%;
@@ -109,6 +109,14 @@
             font-weight: 500;
         }
         margin-bottom: $grid;
+    }
+    #articleControls {
+        .button {
+            font-size: 16px;
+            margin: $grid;
+        }
+        display: flex;
+        justify-content: center;
     }
 }
 

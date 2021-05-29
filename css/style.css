@@ -280,7 +280,7 @@ footer nav {
 footer nav div {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #444;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -440,7 +440,7 @@ img, .container .box p, .article-wrapper .preamble {
 .article-wrapper p {
   text-indent: 27px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #555;
+  color: #333;
   line-height: 20px;
   font-weight: 400;
   font-size: 16px;
@@ -453,15 +453,15 @@ img, .container .box p, .article-wrapper .preamble {
   font-weight: bold;
   font-size: 32px;
   margin-bottom: 18px;
-  padding-left: 18px;
+  padding-left: 27px;
 }
 .article-wrapper h2 {
   color: #444;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 9px;
-  padding-left: 9px;
+  padding-left: 27px;
 }
 .article-wrapper .image-wrapper {
   width: 100%;
@@ -485,6 +485,14 @@ img, .container .box p, .article-wrapper .preamble {
   padding-left: 18px;
   padding-top: 6px;
   font-weight: 500;
+}
+.article-wrapper #articleControls {
+  display: flex;
+  justify-content: center;
+}
+.article-wrapper #articleControls .button {
+  font-size: 16px;
+  margin: 18px;
 }
 
 .sidebar-wrapper {

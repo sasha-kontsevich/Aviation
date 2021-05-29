@@ -2,7 +2,7 @@ let quiz = document.getElementById('quiz');
 $('#quizResult').hide();
 $('#quiz').hide();
 $('#headerQuiz').addClass('selected');
-let count = 5;
+let count = 1;
 let totalQuestions = Questions.length;
 let currentQuestions = [];
 let answered = [];

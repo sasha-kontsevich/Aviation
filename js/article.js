@@ -39,6 +39,39 @@ function onWindowResize() {
 }
 onWindowResize();
 
+topicArticles = [];
+articleNumber = 0;
+n = 0;
+for (const key in Articles.articles) {
+    if (Object.hasOwnProperty.call(Articles.articles, key)) {
+        const element = Articles.articles[key];
+        if (element.topic.name == Articles.articles[currentArticle].topic.name) {
+            topicArticles.push(element);
+            if (element.name == currentArticle) {
+                articleNumber = n;
+            }
+            n++;
+
+        }
+    }
+}
+
+if (topicArticles[articleNumber - 1]) {
+    document.getElementById('articleControls').innerHTML += `
+    <a href="article.php?article=` + topicArticles[articleNumber - 1].name + `">
+        <div class="button">Предыдущая</div>
+        </a>
+    `
+}
+if (topicArticles[articleNumber + 1]) {
+    document.getElementById('articleControls').innerHTML += `
+    <a href="article.php?article=` + topicArticles[articleNumber + 1].name + `">
+        <div class="button">Следующая</div>
+        </a>
+
+    `
+}
+
 function getWidth() {
     xWidth = null;
     if (window.screen != null)

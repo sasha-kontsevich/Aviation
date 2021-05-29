@@ -36,9 +36,10 @@ $_SESSION['article'] = $_GET['article'];
                 <?php //include "modules/article_header.php"; 
                 ?>
                 <?php include "articles/" . $_SESSION['article'] . ".php"; ?>
-
+                <div id="articleControls"></div>
             </div>
         </div>
+
     </div>
     <div id="data" data-article="<?= $_SESSION['article'] ?>"></div>
     <?php include "modules/footer.php"; ?>

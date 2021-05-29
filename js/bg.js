@@ -362,7 +362,7 @@ for (var p = 0; p < 200; p++) {
 
 
 var particleMaterial1 = new THREE.PointsMaterial({ color: 0x883333, size: 2 });
-var particleMaterial2 = new THREE.PointsMaterial({ color: 0x333388, size: 2 });
+var particleMaterial2 = new THREE.PointsMaterial({ color: 0x336688, size: 2 });
 var particleSystem1 = new THREE.Points(particles1, particleMaterial1);
 var particleSystem2 = new THREE.Points(particles2, particleMaterial1);
 var particleSystem3 = new THREE.Points(particles3, particleMaterial2);
