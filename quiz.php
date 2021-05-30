@@ -20,7 +20,7 @@
     <div class="container h100vh d-flex justify-content-center">
 
         <div class="content">
-            <div class="quiz-image"></div>
+            <div class="quiz-image"><img src="images/quiz.jpg" alt="Ан-225"></div>
 
             <h1>Тест: как хорошо вы разбираетесь в авиации?</h1>
             <div class="button-wrapper" id="quizButton">

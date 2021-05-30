@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-$_SESSION['article'] = $_GET['article'];
-?>
+
 
 <head>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -20,9 +18,11 @@ $_SESSION['article'] = $_GET['article'];
     <?php include "modules/header.php"; ?>
 
     <div class="container h100vh">
+        <?php
+        $_SESSION['article'] = $_GET['article'];
+        ?>
         <!-- HEADER -->
         <div class="row">
-
             <!-- SIDEBAR -->
             <div class="sidebar-wrapper col-md-4 col-sm-1">
                 <?php include "modules/sidebar.php"; ?>
@@ -39,7 +39,6 @@ $_SESSION['article'] = $_GET['article'];
                 <div id="articleControls"></div>
             </div>
         </div>
-
     </div>
     <div id="data" data-article="<?= $_SESSION['article'] ?>"></div>
     <?php include "modules/footer.php"; ?>

@@ -187,7 +187,6 @@ light.shadow.camera.height = 50; // default
 LOADING_MANAGER = new THREE.LoadingManager();
 IMAGE_LOADER = new THREE.ImageLoader(LOADING_MANAGER);
 TEXTURE_LOADER = new THREE.TextureLoader(LOADING_MANAGER);
-OBJ_LOADER = new THREE.OBJLoader(LOADING_MANAGER);
 MTL_LOADER = new THREE.MTLLoader(LOADING_MANAGER);
 
 const shadowTexture = TEXTURE_LOADER.load('models/textures/shadow1.png');
@@ -211,6 +210,7 @@ plane.castShadow = true;
 plane.name = 'plane';
 scene.add(plane);
 
+OBJ_LOADER = new THREE.OBJLoader(LOADING_MANAGER);
 let modelsOffsetZ = 30;
 //Corsair
 OBJ_LOADER.load('models/corsair.obj', (object) => {
@@ -342,6 +342,11 @@ for (var p = 0; p < 500; p++) {
     var particle = new THREE.Vector3(Math.random() * 400 - 200, Math.random() * 200 - 100, Math.random() * 500 - 200);
     particles1.vertices.push(particle);
 }
+var particleMaterial1 = new THREE.PointsMaterial({ color: 0x883333, size: 2 });
+var particleSystem1 = new THREE.Points(particles1, particleMaterial1);
+scene.add(particleSystem1);
+
+
 for (var p = 0; p < 500; p++) {
     var particle = new THREE.Vector3(Math.random() * 400 - 200, Math.random() * 200 - 100, Math.random() * 500 - 200);
     particles2.vertices.push(particle);
@@ -361,16 +366,13 @@ for (var p = 0; p < 200; p++) {
 }
 
 
-var particleMaterial1 = new THREE.PointsMaterial({ color: 0x883333, size: 2 });
 var particleMaterial2 = new THREE.PointsMaterial({ color: 0x336688, size: 2 });
-var particleSystem1 = new THREE.Points(particles1, particleMaterial1);
 var particleSystem2 = new THREE.Points(particles2, particleMaterial1);
 var particleSystem3 = new THREE.Points(particles3, particleMaterial2);
 var particleSystem4 = new THREE.Points(particles4, particleMaterial2);
 var selectionParticlesSystem = new THREE.Points(selectionParticles, particleMaterial1);
 selectionParticlesSystem.position.y = -20;
 
-scene.add(particleSystem1);
 scene.add(particleSystem2);
 scene.add(particleSystem3);
 scene.add(particleSystem4);
@@ -430,7 +432,6 @@ function setScene(vertical_position) {
         camera.rotation.z = 0
         camera.rotation.y = 0
     }
-
     start = 1000;
     end = 1300;
     if (vertical_position > start && vertical_position <= end) {
@@ -438,7 +439,6 @@ function setScene(vertical_position) {
         camera.rotation.x = Math.PI / 180 * 10 * (1 - (vertical_position - start) / (end - start));
         camera.rotation.z = 0
     }
-
     start = 1300;
     end = 2000;
     if (start < vertical_position && vertical_position <= end) {
@@ -448,7 +448,6 @@ function setScene(vertical_position) {
         camera.rotation.x = Math.PI / 180 * 20 * (0 + (vertical_position - start) / (end - start));
         camera.rotation.z = Math.PI / 180 * 20 * (0 + (vertical_position - start) / (end - start));
     }
-
     start = 2000;
     end = 3000;
     if (start < vertical_position) {
@@ -468,8 +467,6 @@ function setScene(vertical_position) {
         rotationliner = liner.getObjectByName('mesh').rotation;
         liner.position.set(vertical_position / 2 * Math.sin(rotationliner.y), 0, vertical_position / 2 * Math.cos(rotationliner.y));
     }
-
-
 }
 
 window.addEventListener('wheel', function(e) {
